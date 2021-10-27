@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JavaScript</title>
+		<script>
+			var video = Array();
+
+			video[1] = Array();
+			video[1]["nome"] = "Boku no hero";
+			video[1]["categoria"] = "Anime";
+
+			function getVideo(video) {
+				try {
+					console.log(video[0]["nome"]);
+				} catch (erro) {
+					tratarErro(erro);
+					console.log("Agora sim podemos tratar esse erro");
+					throw new Error(
+						"Houve um erro mas não se preocupe estamos trabalhando nisso agora"
+					);
+				} finally {
+					console.log("Sempre passa por aqui(try/catch)");
+				}
+				console.log("A aplicação não morreu");
+			}
+			getVideo(video);
+			function tratarErro(e) {
+				console.log(e);
+			}
+		</script>
+	</head>
+	<body></body>
+</html>
