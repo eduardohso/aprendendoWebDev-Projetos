@@ -1,0 +1,9 @@
+.wrapper-sponsor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.wrapper-sponsor .action:not(:last-child) {
+	margin-bottom: var(--gap-big);
+}
