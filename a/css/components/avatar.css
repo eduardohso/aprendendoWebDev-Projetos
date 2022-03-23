@@ -1,8 +1,0 @@
-.avatar {
-	border: 0.2rem solid var(--color-twitch);
-	border-radius: 50%;
-}
-
-.avatar.-live {
-	border-color: var(--color-live);
-}

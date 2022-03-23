@@ -1,9 +1,0 @@
-.wrapper-avatar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.wrapper-avatar .avatar {
-    margin: 0 var(--gap-smallest) var(--gap-smallest);
-}
